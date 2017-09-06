@@ -2,14 +2,21 @@
  * ./src/components/RootRouter.jsx
  */
 
-import {Router, Route, hashHistory} from 'react-router'
+import React, {Component} from 'react'
+import {
+  HashRouter,
+  Route
+} from 'react-router-dom';
+
 import App from './App'
 
 function RootRouter() {
   return (
-    <Router history={hashHistory}>
-      <Route path="/" component={App}/>
-    </Router>
+    <HashRouter>
+       <div>
+         <Route exact path="/" component={App} />
+       </div>
+    </HashRouter>
   )
 }
 

@@ -5,7 +5,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import RootRouter from './components/App'
+import RootRouter from './components/RootRouter'
 
 ReactDOM.render(
   <RootRouter />, document.getElementById('root')
